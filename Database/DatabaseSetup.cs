@@ -11,7 +11,6 @@ class DatabaseSetup
     {
         _databaseConfig = databaseConfig; //ñ tem mais conflito de nome
         CreateComputerTable();
-        CreateLabTable();
     }
 
     private void CreateComputerTable()
@@ -30,10 +29,5 @@ class DatabaseSetup
 
         command.ExecuteNonQuery();
         connection.Close();
-    }
-
-    private void CreateLabTable()
-    {
-
     }
 }
