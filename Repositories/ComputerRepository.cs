@@ -1,10 +1,18 @@
 using LabManager.Models;
 using Microsoft.Data.Sqlite;
+using LabManager.DataBase; //pq dataBaseconfig vem de outra pasta
 
 namespace LabManager.Repositories;
 
 class ComputerRepository
 {
+    private readonly DatabaseConfig _databaseConfig;
+
+    public ComputerRepository(DatabaseConfig databaseConfig)
+    {
+        _databaseConfig = databaseConfig;
+    }
+
     public List<Computer> GetAll () //devolver lista de comptadores
     {
         var computers = new List<Computer>();

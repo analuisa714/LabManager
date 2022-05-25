@@ -5,15 +5,18 @@ namespace LabManager.DataBase;
 class DatabaseSetup
 {
 
-    public DatabaseSetup()
+    private readonly DatabaseConfig _databaseConfig; //atributo com _ indica q é privado. conveção
+
+    public DatabaseSetup(DatabaseConfig databaseConfig) //variavel
     {
+        _databaseConfig = databaseConfig; //ñ tem mais conflito de nome
         CreateComputerTable();
         CreateLabTable();
     }
 
     private void CreateComputerTable()
     {
-        var connection = new SqliteConnection ("Data Source=database.db");
+        var connection = new SqliteConnection (_databaseConfig.ConnectionString); //objeto
         connection.Open();
 
         var command = connection.CreateCommand();
