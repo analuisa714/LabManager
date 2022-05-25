@@ -2,9 +2,11 @@
 using LabManager.DataBase;
 using LabManager.Repositories; //importar a classe 
 
-var databaseSetup = new DatabaseSetup();
+var databaseConfig = new DatabaseConfig(); //objeto. não precisa ficar criando nas classes
 
-var computerRepository = new ComputerRepository(); //criar a váriavel 
+var databaseSetup = new DatabaseSetup(databaseConfig);
+
+var computerRepository = new ComputerRepository(databaseConfig); //criar a váriavel 
 
 //Routing
 var modelName = args[0];
@@ -23,13 +25,13 @@ if (modelName == "Computer")
                 }
         }
 
-        if (modelAction == "New")
+        if (modelAction == "New") 
         {
                 var id = Convert.ToInt32(args [2]);
                 var ram = args [3];
                 var processor = args [4];
 
-                var connection = new SqliteConnection ("Data Source=database.db");
+                var connection = new SqliteConnection (databaseConfig.ConnectionString);
                 connection.Open();
 
                 var command = connection.CreateCommand();
