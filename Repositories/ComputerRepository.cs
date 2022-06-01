@@ -75,4 +75,18 @@ class ComputerRepository
         connection.Close();
         return computer;
     }
+
+    public void Delete (int id) //deleta computador do bdd
+    {
+        var connection = new SqliteConnection (_databaseConfig.ConnectionString);
+        connection.Open();
+
+        var command = connection.CreateCommand();
+       
+        command.CommandText = "DELETE FROM Computers WHERE id = $id";
+        command.Parameters.AddWithValue("$id", id);
+        command.ExecuteNonQuery(); //usa quando o método do bdd não tem retorno (retorno = select; ou seja, delete, insert, update ...)
+
+        connection.Close();
+    }
 }
