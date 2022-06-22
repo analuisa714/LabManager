@@ -11,6 +11,7 @@ class DatabaseSetup
     {
         _databaseConfig = databaseConfig; //ñ tem mais conflito de nome
         CreateComputerTable();
+        CreateLabTable();
     }
 
     private void CreateComputerTable()
@@ -30,4 +31,22 @@ class DatabaseSetup
         command.ExecuteNonQuery();
         connection.Close();
     }
+
+    private void CreateLabTable()
+    {
+        var connection = new SqliteConnection("Data Source=database.db");
+        connection.Open();
+
+        var command = connection.CreateCommand();
+        command.CommandText = @"
+            CREATE TABLE IF NOT EXISTS Lab(
+            id int not null primary key,
+            number int not null,
+            name varchar(100) not null,
+            block varchar(100) not null
+            );
+        ";
+        command.ExecuteNonQuery();
+        connection.Close();
+    }   
 }

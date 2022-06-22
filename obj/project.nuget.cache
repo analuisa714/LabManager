@@ -1,16 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "iroYO4db0/Wifq1q/a1qB0QMEhmgslDSoaC5ITZWnVhdfAw1+KZeu9R9/QZoR1kaywEPklammvzPS3GpYG8pBw==",
+  "dgSpecHash": "qGE8Szvv8uEjaiFnMTy3Vd208j8W0vA6/YAy/Fe2lGAMgI+1g6sZQTc0l0wDr1c11vbxpNyXyqm/9048UF74LQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Léia\\Documents\\IF\\LP3\\2°bi\\LabManager\\LabManager.csproj",
+  "projectFilePath": "C:\\Users\\IFSP\\Desktop\\SP3045218\\LabManager\\LabManager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Léia\\.nuget\\packages\\microsoft.data.sqlite\\6.0.5\\microsoft.data.sqlite.6.0.5.nupkg.sha512",
-    "C:\\Users\\Léia\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.5\\microsoft.data.sqlite.core.6.0.5.nupkg.sha512",
-    "C:\\Users\\Léia\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.6\\sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
-    "C:\\Users\\Léia\\.nuget\\packages\\sqlitepclraw.core\\2.0.6\\sqlitepclraw.core.2.0.6.nupkg.sha512",
-    "C:\\Users\\Léia\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.6\\sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
-    "C:\\Users\\Léia\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.6\\sqlitepclraw.provider.e_sqlite3.2.0.6.nupkg.sha512",
-    "C:\\Users\\Léia\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+    "C:\\Users\\IFSP\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\IFSP\\.nuget\\packages\\microsoft.data.sqlite\\6.0.5\\microsoft.data.sqlite.6.0.5.nupkg.sha512",
+    "C:\\Users\\IFSP\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.5\\microsoft.data.sqlite.core.6.0.5.nupkg.sha512",
+    "C:\\Users\\IFSP\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.6\\sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\IFSP\\.nuget\\packages\\sqlitepclraw.core\\2.0.6\\sqlitepclraw.core.2.0.6.nupkg.sha512",
+    "C:\\Users\\IFSP\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.6\\sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\IFSP\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.6\\sqlitepclraw.provider.e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\IFSP\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }
