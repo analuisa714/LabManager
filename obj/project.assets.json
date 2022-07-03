@@ -307,30 +307,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IFSP\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Léia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IFSP\\Desktop\\SP3045218\\LabManager\\LabManager.csproj",
+      "projectUniqueName": "C:\\Users\\Léia\\Desktop\\LabManager\\LabManager\\LabManager.csproj",
       "projectName": "LabManager",
-      "projectPath": "C:\\Users\\IFSP\\Desktop\\SP3045218\\LabManager\\LabManager.csproj",
-      "packagesPath": "C:\\Users\\IFSP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IFSP\\Desktop\\SP3045218\\LabManager\\obj\\",
+      "projectPath": "C:\\Users\\Léia\\Desktop\\LabManager\\LabManager\\LabManager.csproj",
+      "packagesPath": "C:\\Users\\Léia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Léia\\Desktop\\LabManager\\LabManager\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\IFSP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Léia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

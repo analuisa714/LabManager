@@ -31,8 +31,6 @@ class ComputerRepository
         connection.Open();
 
         connection.Execute("INSERT INTO Computers VALUES(@Id, @Ram, @Processor)", computer);
-
-        connection.Close();
     }
 
     public Computer GetById (int id) //devolve computador pelo id
@@ -55,12 +53,12 @@ class ComputerRepository
 
     public Computer Update (Computer computer) //atualiza computador no bdd
     {
-         using var connection = new SqliteConnection(_databaseConfig.ConnectionString);
+        using var connection = new SqliteConnection(_databaseConfig.ConnectionString);
         connection.Open();
 
-        connection.Execute("UPDATE Computers SET ram = @Ram, processador = @Processor  WHERE id == @Id", computer);
+        connection.Execute("UPDATE Computers SET ram = @Ram, processor = @Processor  WHERE id == @Id", computer);
         
-        return GetById(computer.Id);
+        return computer;
     }
 
     public bool ExistsById(int id) //confere se um computador existe no bdd pelo id
@@ -68,7 +66,7 @@ class ComputerRepository
         using var connection = new SqliteConnection(_databaseConfig.ConnectionString);
         connection.Open();
    
-        bool result = connection.ExecuteScalar<bool>("SELECT count(id) FROM Computers WHERE id = $Id", new {Id = id});
+        bool result = connection.ExecuteScalar<bool>("SELECT count(id) FROM Computers WHERE id = @Id", new {Id = id});
 
         return result;
     }
